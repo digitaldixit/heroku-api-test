@@ -3,8 +3,8 @@ var nodemailer = require('nodemailer');
 let transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-      user: process.env.MAIL_ID, // TODO: your gmail account
-      pass: process.env.MAIL_KEY // TODO: your gmail password
+      user: 'dixit.local@gmail.com', // TODO: your gmail account
+      pass: 'nncomitistqomvao' // TODO: your gmail password
   }
 });
 
