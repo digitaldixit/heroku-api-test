@@ -10,9 +10,13 @@ const PORT = process.env.PORT || 4000
 app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'));
+const customerRouter = require("./models/customer/customer.router")
 app.get("/",(req,res)=>{
     res.json("Welcome to API")
 });
+
+// customer
+app.use("/customer",customerRouter)
 
 
 app.use(function (req, res, next) {
